@@ -1,0 +1,21 @@
+.user-component {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+.user-component .user-header {
+  color: #fff;
+  text-align: center;
+  margin: 30px;
+  font-size: 50px;
+}
+.user-component .user-button {
+  padding: 10px 20px;
+  margin: 5px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.user-component .user-button:hover {
+  background-color: #eae0ef;
+}

@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import UserList from "./components/UserList";  // Adjust the path if necessary
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import Faq from "./components/Faq/Faq";
+import UserList from "./components/UserList/UserList";
 
 const App = () => {
   const [userList, setUserList] = useState([]);
@@ -26,9 +29,42 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <UserList userList={userList} deleteData={deleteData} />
-    </div>
+    <Router>
+      <div className="app-container">
+        <nav>
+          <ul className="nav-links">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/faq">Faq</Link>
+            </li>
+            <li>
+              <Link to="/user-list">User List</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="home-container">
+                <h1>Welcome to Debug Media</h1>
+                <div className="buttons">
+                  <button className="home-btn"><a href="/faq">Faq</a></button>
+                  <button className="home-btn"><a href="/user-list">User details</a></button>
+                </div>
+              </div>
+            }
+          />
+          <Route path="/faq" element={<Faq />} />
+          <Route
+            path="/user-list"
+            element={<UserList userList={userList} deleteData={deleteData} />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

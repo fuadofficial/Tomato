@@ -1,0 +1,11 @@
+.faq-container{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+.faq-component .faq-header {
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+    font-size: 50px;
+  }
