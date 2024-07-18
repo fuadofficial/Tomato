@@ -3,7 +3,7 @@ import "./UserList.css";
 const UserList = ({ userList, deleteData }) => {
   return (
     <div className="user-component">
-      <h1 className="user-header">User details</h1>
+      <h1 className="user-header">USER DETAILS</h1>
       {userList.map((data) => (
         <div key={data.id}>
           <button className="user-button" onClick={() => deleteData(data.id)}>

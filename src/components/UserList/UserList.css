@@ -13,9 +13,10 @@
   padding: 10px 20px;
   margin: 5px 100px;
   border: none;
+  color: #fff;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: blueviolet;
 }
 .user-component .user-button:hover {
-  background-color: #eae0ef;
+  background-color: rgb(175, 96, 249);
 }

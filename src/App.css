@@ -5,7 +5,7 @@
 }
 
 nav {
-  background-color: #333;
+  background-color: rgb(9, 2, 16);
   padding: 20px;
 }
 
@@ -31,7 +31,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: rgb(175, 96, 249);
   color: #fff;
 }
 

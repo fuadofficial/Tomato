@@ -37,10 +37,10 @@ const App = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/faq">Faq</Link>
+              <Link to="/user-list">User List</Link>
             </li>
             <li>
-              <Link to="/user-list">User List</Link>
+              <Link to="/faq">Faq</Link>
             </li>
           </ul>
         </nav>
@@ -49,19 +49,23 @@ const App = () => {
             path="/"
             element={
               <div className="home-container">
-                <h1>Welcome to Debug Media</h1>
+                <h1>Welcome.......</h1>
                 <div className="buttons">
-                  <button className="home-btn"><a href="/faq">Faq</a></button>
-                  <button className="home-btn"><a href="/user-list">User details</a></button>
+                  <button className="home-btn">
+                    <a href="/user-list">User details</a>
+                  </button>
+                  <button className="home-btn">
+                    <a href="/faq">Faq</a>
+                  </button>
                 </div>
               </div>
             }
           />
-          <Route path="/faq" element={<Faq />} />
           <Route
             path="/user-list"
             element={<UserList userList={userList} deleteData={deleteData} />}
           />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
       </div>
     </Router>
