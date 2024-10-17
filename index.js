@@ -1,13 +1,15 @@
-// const array = ["fuad", "aju", "saju", "kappu",3]
-// const arrayaa = "fuad oorakam"
-// const arraya = [1, 2, 3, 4, 5]
+function getName() {
+    console.log(this.name);
+    console.log(this.age);
+}
 
-// for (let x of array) {
-//     console.log(x);
-// }
-// // for (let x of arrayaa) {
-// //     console.log(x);
-// // }
-// // for (let x of arraya) {
-// //     console.log(x);
-// // }
+const o = {
+    name: "fuad",
+    age: 3,
+}
+const o2 = {
+    name: "aju",
+    age: 343,
+}
+
+getName.call()
