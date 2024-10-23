@@ -6,7 +6,6 @@ import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const Home = () => {
   const [category, setCategory] = useState("All");
-  console.log(category);
 
   return (
     <div>
