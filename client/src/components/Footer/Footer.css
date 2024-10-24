@@ -25,6 +25,7 @@
   align-items: safe;
   gap: 20px;
 }
+
 .footer-content-left img {
   width: 140px;
 }
@@ -53,4 +54,17 @@
   margin: 20px 0;
   background-color: gray;
   border: none;
+}
+
+
+@media (max-width:750px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
 }
