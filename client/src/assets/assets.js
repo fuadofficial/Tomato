@@ -156,7 +156,7 @@ export const food_list = [
   },
   {
     _id: "5",
-    name: "Lasagna Rolls",
+    name: "Lasagna Rolls ",
     image: food_5,
     price: 14,
     description:
