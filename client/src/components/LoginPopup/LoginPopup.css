@@ -62,3 +62,13 @@
     gap: 8px;
     margin-top: -15px;
 }
+
+.login-popup-title img {
+    margin-top: 5px;
+}
+
+.login-popup p span {
+    color: tomato;
+    text-wrap: 500;
+    cursor: pointer;
+}
